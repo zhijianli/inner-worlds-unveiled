@@ -1,0 +1,31 @@
+{
+  "name": "reactor-web-project",
+  "version": "1.0.0",
+  "description": "A Reactor Web Application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx,ts,tsx",
+    "lint:fix": "eslint . --ext js,jsx,ts,tsx --fix"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.1.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^4.9.5"
+  },
+  "keywords": ["react", "web", "reactor"],
+  "author": "Your Name",
+  "license": "MIT"
+} 

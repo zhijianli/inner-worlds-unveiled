@@ -1,0 +1,446 @@
+.sanctuary-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.sanctuary-container {
+  width: 100%;
+  max-width: 700px;
+  height: 80vh;
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+.sanctuary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.sanctuary-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.sanctuary-subtitle {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin: 0;
+}
+
+.global-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #333333;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn.active {
+  background: #74b9ff;
+  box-shadow: 0 0 20px rgba(116, 185, 255, 0.3);
+}
+
+.nav-btn:hover:not(.active) {
+  background: #444444;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  background: #333333;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background: #74b9ff;
+  box-shadow: 0 0 20px rgba(116, 185, 255, 0.3);
+}
+
+.tab-btn:hover:not(.active) {
+  background: #444444;
+}
+
+.tab-icon {
+  font-size: 1.2rem;
+}
+
+/* Main Content */
+.sanctuary-content {
+  flex: 1;
+  background: #0f0f0f;
+  border-radius: 12px;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 0.9rem;
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Energy Display */
+.energy-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  background: rgba(116, 185, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(116, 185, 255, 0.3);
+}
+
+.energy-label {
+  font-size: 0.8rem;
+  color: #cccccc;
+}
+
+.energy-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #74b9ff;
+}
+
+/* Garden Grid */
+.garden-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.garden-item {
+  position: relative;
+  background: #333333;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.garden-item.unlocked {
+  background: linear-gradient(135deg, #333333 0%, #444444 100%);
+  border-color: #74b9ff;
+  box-shadow: 0 5px 15px rgba(116, 185, 255, 0.2);
+}
+
+.garden-item.locked {
+  background: #222222;
+  opacity: 0.7;
+  filter: grayscale(0.5);
+}
+
+.garden-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.unlock-indicator {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background: #fdcb6e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.item-icon {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.item-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.item-description {
+  font-size: 0.8rem;
+  color: #cccccc;
+  line-height: 1.4;
+}
+
+/* Part Gallery Styles */
+.gallery-progress {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.progress-numbers {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.gallery-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.magnifying-glass {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.glass-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #74b9ff;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.glass-handle {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 25px;
+  height: 4px;
+  background: #6c5ce7;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transform-origin: left center;
+}
+
+.gallery-action {
+  text-align: center;
+}
+
+.gallery-action p {
+  font-size: 0.9rem;
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Burden Altar Styles */
+.altar-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.altar-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #f4e4c1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(244, 228, 193, 0.3);
+}
+
+.star {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: starGlow 2s ease-in-out infinite alternate;
+}
+
+.star-1 {
+  top: 20px;
+  left: 30px;
+  animation-delay: 0s;
+}
+
+.star-2 {
+  bottom: 25px;
+  right: 35px;
+  animation-delay: 1s;
+}
+
+@keyframes starGlow {
+  from {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.altar-tools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.tool-card {
+  background: #333333;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  border-color: #74b9ff;
+  box-shadow: 0 10px 25px rgba(116, 185, 255, 0.2);
+}
+
+.tool-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.tool-icon.hexagon {
+  color: #74b9ff;
+}
+
+.tool-icon.compass {
+  color: #f39c12;
+}
+
+.tool-icon.lantern {
+  color: #e74c3c;
+}
+
+.tool-icon.shield {
+  color: #3498db;
+}
+
+.tool-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.tool-description {
+  font-size: 0.7rem;
+  color: #cccccc;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Coming Soon */
+.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #666666;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sanctuary-page {
+    padding: 1rem;
+  }
+  
+  .sanctuary-container {
+    height: 95vh;
+    padding: 1.5rem;
+  }
+  
+  .sanctuary-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .sanctuary-title {
+    font-size: 2rem;
+  }
+  
+  .tab-navigation {
+    flex-direction: column;
+  }
+  
+  .garden-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .global-nav {
+    width: 100%;
+    justify-content: center;
+  }
+} 

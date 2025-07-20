@@ -1,0 +1,91 @@
+.about {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-content > p {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.tech-stack, .features {
+  margin-bottom: 3rem;
+}
+
+.tech-stack h2, .features h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.tech-stack ul, .features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-stack li, .features li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1.1rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.tech-stack li:hover, .features li:hover {
+  color: #667eea;
+  padding-left: 10px;
+}
+
+.tech-stack li:last-child, .features li:last-child {
+  border-bottom: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+  
+  .about-content h1 {
+    font-size: 2rem;
+  }
+  
+  .about-content > p {
+    font-size: 1rem;
+  }
+  
+  .tech-stack h2, .features h2 {
+    font-size: 1.5rem;
+  }
+  
+  .tech-stack li, .features li {
+    font-size: 1rem;
+  }
+} 
