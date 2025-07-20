@@ -4,7 +4,7 @@
   "description": "A Reactor Web Application",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 6778 --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx,ts,tsx",
