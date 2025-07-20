@@ -13,6 +13,7 @@ export default defineConfig({
     port: 6778,
     host: '0.0.0.0',
     open: true,
+    allowedHosts: true,
   },
   build: {
     outDir: 'dist',
