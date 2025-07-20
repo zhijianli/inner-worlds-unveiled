@@ -7,4 +7,4 @@ fuser -k 6778/tcp
 sleep 3
 
 # 启动npm start，日志输出到log.txt，后台运行
-nohup npm start > log.txt 2>&1 &
+nohup npm run dev > log.txt 2>&1 &
